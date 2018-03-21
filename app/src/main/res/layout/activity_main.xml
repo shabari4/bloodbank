@@ -12,8 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/bloodbank2"
-        android:layout_marginTop="40"
-        android:layout_marginLeft="40"/>
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"/>
 
    <EditText
        android:layout_width="match_parent"
@@ -29,13 +29,23 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/password"
-        android:hint="password"/>
+        android:hint="password" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/login"
-        android:text="Login" />
+        android:text="Login"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="Sign up"
+        android:layout_gravity="center_horizontal"/>
 
 
 

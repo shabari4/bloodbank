@@ -14,29 +14,29 @@
     android:paddingTop="20dp">
 
     <Button
-        android:id="@+id/o+"
+        android:id="@+id/opos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:text="O+" />
+        android:text="O+"/>
 
     <Button
-        android:id="@+id/o-"
+        android:id="@+id/oneg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="O-" />
+        android:text="O-"/>
 
     <Button
-        android:id="@+id/ab+"
+        android:id="@+id/abpos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AB+" />
+        android:text="AB+"/>
 
     <Button
-        android:id="@+id/ab-"
+        android:id="@+id/abneg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AB-" />
+        android:text="AB-"/>
 
 </LinearLayout>
 
@@ -44,58 +44,98 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="10">
+    android:paddingTop="10dp">
+
+
 
     <Button
-        android:id="@+id/a+"
+        android:id="@+id/apos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:text="A+" />
+        android:text="A+"/>
 
     <Button
-        android:id="@+id/a-"
+        android:id="@+id/aneg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A-" />
+        android:text="A-"/>
 
     <Button
-        android:id="@+id/b+"
+        android:id="@+id/bpos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="B+" />
+        android:text="B+"/>
 
     <Button
-        android:id="@+id/b-"
+        android:id="@+id/bneg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="B-" />
+        android:text="B-"/>
+
 
 </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginLeft="35dp">
+        android:text="Blood Group"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
             android:id="@+id/donor"
-            android:text="DONOR"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/blooddrop"
+            android:text="DONOR" />
 
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="110dp"
+            android:text="DONATE"
+            android:id="@+id/textView"
+            android:textSize="40dp"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:id="@+id/recipient"
+            android:background="@drawable/blooddrop1"
             android:text="RECIPIENT"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp"/>
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
+            android:layout_below="@+id/donor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/recipient"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/recipient"
+            android:layout_toRightOf="@+id/recipient"
+            android:text="RECIPIENT"
+            android:textSize="40dp" />
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>

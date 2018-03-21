@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity
 {
     EditText memail,mpassword;
-    Button login;
+    Button login,signup;
 
     private FirebaseAuth mauth;
     private FirebaseAuth.AuthStateListener mautlistener;
@@ -33,7 +33,9 @@ public class MainActivity extends AppCompatActivity
         memail=(EditText) findViewById(R.id.email);
         mpassword=(EditText) findViewById(R.id.password);
         login=(Button) findViewById(R.id.login);
+        signup=(Button) findViewById(R.id.signup);
         mauth=FirebaseAuth.getInstance();
+
         mautlistener=new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth)
@@ -56,6 +58,18 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
+
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(MainActivity.this,signup.class);
+                startActivity(intent);
+
+            }
+        });
+
+
     }
 
     @Override
@@ -93,4 +107,5 @@ public class MainActivity extends AppCompatActivity
             });
         }
     }
+
 }
