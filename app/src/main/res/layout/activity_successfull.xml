@@ -4,42 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="com.example.shabarinath.bloodbank.successfull">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="20dp">
 
     <Button
+        android:id="@+id/o+"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/o+"/>
+        android:layout_marginLeft="20dp"
+        android:text="O+" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/o-"
-        android:layout_alignParentLeft="o+"/>
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/a+"/>
+        android:text="O-" />
 
     <Button
+        android:id="@+id/ab+"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/a-" />
+        android:text="AB+" />
+
+    <Button
+        android:id="@+id/ab-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AB-" />
+
+</LinearLayout>
 
 
-</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10">
+
+    <Button
+        android:id="@+id/a+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="A+" />
+
+    <Button
+        android:id="@+id/a-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A-" />
+
+    <Button
+        android:id="@+id/b+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B+" />
+
+    <Button
+        android:id="@+id/b-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B-" />
+
+</LinearLayout>
 
     <LinearLayout
-        android:layout_width=""
-        android:layout_height=""></LinearLayout>
-    <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/"/>
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="35dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/donor"
+            android:text="DONOR"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recipient"
+            android:text="RECIPIENT"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"/>
+
+
+    </LinearLayout>
 
 </LinearLayout>
