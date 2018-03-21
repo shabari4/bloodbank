@@ -5,27 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.shabarinath.bloodbank.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/color">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bloodbank2"
+        android:layout_marginTop="40"
+        android:layout_marginLeft="40"/>
 
    <EditText
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:inputType="textEmailAddress"
        android:ems="10"
-       android:id="@+id/email"/>
+       android:id="@+id/email"
+       android:hint="username"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/password"/>
+        android:id="@+id/password"
+        android:hint="password"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/login"
-        android:text="Login"/>
+        android:text="Login" />
+
+
+
 
 
 
